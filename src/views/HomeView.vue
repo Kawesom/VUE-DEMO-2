@@ -1,26 +1,17 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
-import { ref } from 'vue';
+//import TheWelcome from '@/components/TheWelcome.vue'
+//import { ref } from 'vue';
+import {useFlash} from '@/Composables/useFlash.js';
 
-let message = ref('Dogtooth');
-
-  setTimeout(() =>{
-     message.value = "Howdy";
-  }, 2000);
-
-let doSomething = () => {
-  alert("Do It");
-}
+let {flash} = useFlash();
 
 
 </script>
 
 <template>
   <main>
- <p>{{ message }}</p>
  <p>
-  <button @click="doSomething">Clicky Blicky</button>
+  <button @click="flash('Yay!!','It Works Baby!!!','info')">Clicky Blicky</button>
  </p>
-    <TheWelcome />
   </main>
 </template>
