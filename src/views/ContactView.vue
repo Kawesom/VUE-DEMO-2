@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1>This is a Contact page</h1>
+    <h1>This is a Contact page. The current count is {{ counter }}</h1>
   </div>
 </template>
 
