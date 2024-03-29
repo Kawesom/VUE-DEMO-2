@@ -3,6 +3,7 @@
     <textarea @keydown.tab.prevent="onTabPress"
     @keyup="emit('update:modelValue', $event.target.value);" 
     v-text="modelValue" />
+    
 </template>
 //refering to line 4 inline version of update function below 
 <script setup>
