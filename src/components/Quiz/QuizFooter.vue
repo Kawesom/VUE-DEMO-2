@@ -9,5 +9,5 @@
 <script setup>
 import QuizFooterLinks from "@/components/Quiz/QuizFooterLinks.vue";
 
-defineProps({ quiz: Object });
+
 </script>
